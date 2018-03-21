@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+        let arg1 = +prompt("Введите первый аргумент:"); 
+        let arg2 = +prompt("Введите второй аргумент:"); 
+        let operation = prompt("Введите значение операции (+, -, * или /):"); 
+
+        function add(x,y){
+            let z = (x+y);
+            return z;		
+     	}	
+
+        function sub(x,y){
+            let z = (x-y);
+            return z;		
+     	}
+
+        function mul(x,y){
+            let z = (x*y);
+            return z;		
+     	}
+        
+        function div(x,y){
+            let z = (x/y);
+            return z;		
+     	}
+
+        function mathOperation(arg1, arg2, operation) {
+            let z;
+            switch (operation) {
+                case "+":
+                z=add(arg1, arg2);
+                return z;
+                case "-":
+                z=sub(arg1, arg2);
+                return z;
+                case "*":
+                z=mul(arg1, arg2);
+                return z;
+                case "/":
+                z=div(arg1, arg2);
+                return z;
+            }
+        }
+
+        alert(mathOperation(arg1, arg2, operation));
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

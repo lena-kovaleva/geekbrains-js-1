@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            let val = +prompt("Введите число");
+            let pow = +prompt("Введите степень, в которую хотите возвести число");
+
+            function power(val, pow) {
+                if (pow > 0)
+                    return power(val, pow - 1) * val;
+                else if (pow == 0)
+                    return 1;
+                else 
+                return 1/power(val, -pow);
+            }
+            alert(power(val, pow));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
