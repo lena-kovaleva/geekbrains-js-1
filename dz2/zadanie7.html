@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            alert ("typeof null - " + typeof null);  // object
+            alert ("typeof 0 - " + typeof 0);  // number
+            alert (null>0); // false
+            alert(null<0); // false
+            alert(null>=0); // true
+            alert(null<=0); //  true //арифметические операции и определены только для чисел
+                              // по этому JS преобразует null в число и получится 0. Таким образом, первые два выражения ложны
+                              // (т.к. 0 не больше и не меньше, чем 0) а вторые два - истинны (т.к. 0 равен 0)
+            alert("null == 0" + null == 0); // в этом случае преобразование выполняться не будет, а так как null и 0 это разные вещи (null  является 'object')
+                                // то результат выражения - ложь
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
