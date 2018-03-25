@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+        let x = 0;
+            
+        function odd(x) {
+            if (x==0) {
+                return " - это ноль"
+            }
+            let d=x%2;
+            if (d==0) {
+                return " - четное число";
+            }
+            else 
+                return " - нечетное число";
+        }
+
+        do {
+            let y=odd(x);
+            document.write(x + y + "<br>");
+            x++;
+        } while (x<=10) 
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
