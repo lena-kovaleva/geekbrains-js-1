@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            let number = +prompt('Введите число:');
+
+            function numberToObject(number) {
+                if (number < 0 || number > 999) {
+                    console.log('Число меньше 0 или больше 999!');
+                    return {};
+                }
+
+                let edinicy = number % 10;      // 123 % 10 = 3
+                number -= edinicy;              // 123 - 3 = 120
+                number /= 10;                   // 120 / 10 = 12
+                let desiatki = number % 10;     // 12 % 10 = 2
+                number -= desiatki;             // 12 - 2 = 10
+                number /= 10;                   // 10 / 10 = 1
+                let sotni = number;
+                
+                let obekt = {
+                    "единицы": edinicy,
+                    "десятки": desiatki,
+                    "сотни": sotni
+                };
+
+                return obekt;
+            }
+
+            let result = numberToObject(number);
+
+            console.log(result);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
