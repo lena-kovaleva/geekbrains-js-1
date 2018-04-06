@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание №2</title>
+        <meta charset=UTF-8>
+        <style>
+            .column {
+                width: 50%;
+                box-sizing: border-box;
+                float: left;
+                border-right: 3px solid black;
+            }
+
+            .name {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .name-sum {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 20px;
+            }
+
+            .item {
+                margin: 20px;
+                border: 2px solid lightgray;
+                width: 200px;
+                text-align: center;
+                background-color: #F0F0F0;
+            }
+
+            .button {
+                display: block;
+                text-align: center;
+                font-size: bold;
+                width: 60px;
+                height: 20px;
+                padding: 10px;
+                margin-left: 55px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: lightgray;
+                cursor: pointer;
+                
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div id="market" class="column">
+            <div class="name">Товары</div>
+        </div>
+        <div class="column">
+            <div class="name">Корзина</div>
+            <div id="basket"></div>
+            <div><div class="name-sum">Сумма: <span id="sum">0</span></div></div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

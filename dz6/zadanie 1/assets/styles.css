@@ -1,0 +1,59 @@
+
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1002px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+.big-picture {
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    border: 1px solid darkgray;
+    padding: 0;
+    margin: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -64px;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 10px;
+    background-image: url("./images/arrow-left.png");
+}
+
+.arrow-right {
+    right: 10px;
+    background-image: url("./images/arrow-right.png");
+}
+
+.minis-bar {
+    height: 220px;
+    margin-top: 30px;
+    border: 1px solid darkgray;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.minis-bar > img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.minis-bar > img:first-child {
+    margin-left: 0;
+}
